@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities{
+    .divider{
+     @apply grid;
+     grid-template-columns: auto 1fr;   
+    }
+}
