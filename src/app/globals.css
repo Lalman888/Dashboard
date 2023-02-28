@@ -11,4 +11,8 @@
         @apply grid;
         grid-template-rows: auto 1fr;
     }
+    header{
+        @apply grid;
+        grid-template-columns: 1fr auto;
+    }
 }
