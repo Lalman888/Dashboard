@@ -1,4 +1,5 @@
 import "./globals.css";
+import { MenuIcon } from "lucide-react"
 import { Montserrat } from "next/font/google"
 const montserrat = Montserrat({
   weight: ["400", "500", "600", "700"],
@@ -13,7 +14,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${montserrat.variable}`}>{children}</body>
+      <body className={`${montserrat.variable} font-montserrat divider h-screen w-full`}>
+        <aside className=' px-7'>
+          <button>
+            <MenuIcon className="my-5" />
+          </button>
+        </aside>
+        {children}
+      </body>
     </html>
   );
 }
