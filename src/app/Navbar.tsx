@@ -1,10 +1,15 @@
+'use client'
 import { MenuIcon } from "lucide-react"
+import { useState } from "react"
 
 function Navbar() {
+    const [isOpen, setIsOpen] = useState(false)
     return (
         <aside className=' px-7'>
             <button>
-                <MenuIcon className="my-5" />
+                {
+                    !isOpen ? <MenuIcon /> : null
+                }
             </button>
         </aside>
     )
